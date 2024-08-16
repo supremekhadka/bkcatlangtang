@@ -1,8 +1,11 @@
+"use client";
+
 import Image from "next/image";
+import { useState, useEffect } from "react";
 import { Unbounded, Work_Sans } from "next/font/google";
 import Timer from "./components/Timer";
+import Loader from "./components/Loader";
 import backgroundImage from "../public/assets/langtang2-blue.png";
-import logo from "../public/assets/logo.jpg";
 
 const unbounded = Unbounded({
   subsets: ["latin"],
@@ -14,13 +17,37 @@ const workSans = Work_Sans({
 });
 
 export default function Home() {
+  const [imagesLoaded, setImagesLoaded] = useState(0);
+  const [showLoader, setShowLoader] = useState(true);
+  const totalImages = 1;
+
+  const handleLoadingComplete = () => {
+    setImagesLoaded((prev) => prev + 1);
+  };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (imagesLoaded === totalImages) {
+        setShowLoader(false);
+      }
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, [imagesLoaded, totalImages]);
+
+  const allImagesLoaded = imagesLoaded === totalImages;
   return (
     <>
+      {showLoader && (
+        <div className="bg-[#296eb1] z-20 brightness-75 w-screen h-screen fixed"></div>
+      )}
+      {!allImagesLoaded && <Loader />}
       <main className="w-screen h-screen flex-col justify-center items-center">
         <Image
           src={backgroundImage}
           alt="Background Image Langtang"
-          className="fixed -z-10 brightness-75 min-w-[1000px] smmin-w-screen"
+          className="fixed -z-10 brightness-75 min-w-[1000px] sm:min-w-screen"
+          onLoadingComplete={handleLoadingComplete}
         />
         <div className="flex xl:flex-row flex-col w-full h-full justify-center items-center gap-10 sm:gap-20 2xl:gap-20">
           <h1
