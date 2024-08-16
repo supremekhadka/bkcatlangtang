@@ -34,7 +34,7 @@ const Timer = () => {
       <div
         className={`${workSans.className} relative flex justify-center items-center gap-10  bg-opacity-100 z-10 rounded-3xl drop-shadow-2xl`}
       >
-        <div className="absolute w-full h-full -z-20 bg-[#3f94e4] opacity-100 blur-[75px] bg-blend-soft-light animate-pulse"></div>
+        <div className="absolute w-full h-full -z-20 bg-[#7fb5e9] opacity-100 blur-[75px] bg-blend-soft-light animate-pulse"></div>
         <div
           className={`${workSans.className} border	 relative flex justify-center items-center 2xl:gap-10 xl:gap-8 lg:gap-6 sm:gap-4 gap-4 bg-[#0d1824c4] bg-opacity-100 z-10 rounded-3xl 2xl:px-16 2xl:py-10 xl:px-14 xl:py-8 sm:px-12 sm:py-6 px-8 py-6 drop-shadow-2xl`}
         >
