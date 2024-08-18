@@ -8,7 +8,7 @@ import {
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-
+import { LatLngTuple } from "leaflet";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 
@@ -23,7 +23,7 @@ let DefaultIcon = L.icon({
 
 L.Marker.prototype.options.icon = DefaultIcon;
 
-const stops = [
+const stops: { name: string; position: LatLngTuple }[] = [
   { name: "Kathmandu", position: [27.7172, 85.324] },
   { name: "Syabrubesi", position: [28.1634, 85.335] },
   { name: "Lama Hotel", position: [28.218, 85.3763] },
@@ -41,7 +41,7 @@ const TrekMap = () => {
 
   if (!mounted) return null;
 
-  const polylinePositions = stops.map((stop) => stop.position);
+  const polylinePositions: LatLngTuple[] = stops.map((stop) => stop.position);
 
   return (
     <MapContainer
