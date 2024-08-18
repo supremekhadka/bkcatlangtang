@@ -78,7 +78,7 @@ export default function Home() {
           >
             Itinerary
           </h1>
-          <ul className="flex flex-col items-start gap-3 w-max">
+          <ul className="flex flex-col items-start gap-3 w-full p-5">
             <li
               className={`${workSans.className} text-md sm:text-2xl text-wrap break-words`}
             >
