@@ -1,3 +1,5 @@
+//bkcatlangtang BKC At Langtang Bkc At Langtang bkc at langtang BKC AT LANGTANG
+
 "use client";
 
 import Image from "next/image";
@@ -78,40 +80,42 @@ export default function Home() {
           >
             Itinerary
           </h1>
-          <ul className="flex flex-col items-start gap-3 w-full p-5">
+          <ul className="flex flex-col items-start gap-3 w-full p-5 ">
             <li
-              className={`${workSans.className} text-md sm:text-2xl text-wrap break-words`}
+              className={`${workSans.className} text-md sm:text-2xl text-wrap break-words `}
             >
-              <span className="font-semibold">Day 1 &nbsp; |</span>
-              &nbsp; Drive from Kathmandu to Syabrubesi (1,550m)
+              <span className="font-semibold">Day 1 &nbsp;</span>
+              &nbsp; | &nbsp;Drive from Kathmandu to Syabrubesi (1,550m)
             </li>
             <li className={`${workSans.className} sm:text-2xl`}>
-              <span className="font-semibold">Day 2 &nbsp; |</span>
-              &nbsp; Trek from Syabrubesi to Lama Hotel (2,380m)
+              <span className="font-semibold">Day 2 &nbsp;</span>
+              &nbsp; | &nbsp;Trek from Syabrubesi to Lama Hotel (2,380m)
             </li>
             <li className={`${workSans.className} sm:text-2xl`}>
-              <span className="font-semibold">Day 3 &nbsp; |</span>
-              &nbsp; Trek from Lama Hotel to Langtang Village (3,430m)
+              <span className="font-semibold">Day 3 &nbsp;</span>
+              &nbsp; | &nbsp;Trek from Lama Hotel to Langtang Village (3,430m)
             </li>
             <li className={`${workSans.className} sm:text-2xl`}>
-              <span className="font-semibold">Day 4 &nbsp; |</span>
-              &nbsp; Trek from Langtang Village to Kyanjin Gompa (3,870m)
+              <span className="font-semibold">Day 4 &nbsp;</span>
+              &nbsp; | &nbsp;Trek from Langtang Village to Kyanjin Gompa
+              (3,870m)
             </li>
             <li className={`${workSans.className} sm:text-2xl`}>
-              <span className="font-semibold">Day 5 &nbsp; |</span>
-              &nbsp; Explore Kyanjin Gompa and hike to Tserko Ri (4,984m)
+              <span className="font-semibold">Day 5 &nbsp;</span>
+              &nbsp; | &nbsp;Explore Kyanjin Gompa and hike to Tserko Ri
+              (4,984m)
             </li>
             <li className={`${workSans.className} sm:text-2xl`}>
-              <span className="font-semibold">Day 6 &nbsp; |</span>
-              &nbsp; Trek back from Kyanjin Gompa to Lama Hotel
+              <span className="font-semibold">Day 6 &nbsp;</span>
+              &nbsp; | &nbsp;Trek back from Kyanjin Gompa to Lama Hotel
             </li>
             <li className={`${workSans.className} sm:text-2xl`}>
-              <span className="font-semibold">Day 7 &nbsp; |</span>
-              &nbsp; Trek from Lama Hotel to Syabrubesi
+              <span className="font-semibold">Day 7 &nbsp;</span>
+              &nbsp; | &nbsp;Trek from Lama Hotel to Syabrubesi
             </li>
             <li className={`${workSans.className} sm:text-2xl`}>
-              <span className="font-semibold">Day 8 &nbsp; |</span>
-              &nbsp; Drive back from Syabrubesi to Kathmandu
+              <span className="font-semibold">Day 8 &nbsp;</span>
+              &nbsp; | &nbsp;Drive back from Syabrubesi to Kathmandu
             </li>
           </ul>
         </div>
