@@ -42,11 +42,11 @@ export default function Home() {
         <div className="bg-[#296eb1] z-20 brightness-75 w-screen h-screen fixed"></div>
       )}
       {!allImagesLoaded && <Loader />}
-      <main className="w-screen h-screen flex-col justify-center items-center">
+      <div className="w-screen overflow-hidden h-screen flex-col justify-center items-center">
         <Image
           src={backgroundImage}
           alt="Background Image Langtang"
-          className="fixed -z-10 brightness-75 min-w-[1000px] sm:min-w-screen"
+          className="fixed -z-10 brightness-75 min-w-[1000px] sm:min-w-screen xl:min-h-none min-h-screen"
           onLoadingComplete={handleLoadingComplete}
         />
         <div className="flex xl:flex-row flex-col w-full h-full justify-center items-center gap-10 sm:gap-20 2xl:gap-20">
@@ -56,7 +56,7 @@ export default function Home() {
             BKC <br className="hidden xl:block" />
             At Langtang
           </h1>
-          <div className="hidden xl:block w-[0.1em] h-72 bg-white rounded-full"></div>
+          <div className="hidden xl:block w-[0.1em] h-56 bg-white rounded-full"></div>
           <div className="flex-col justify-center items-center">
             <p
               className={`${unbounded.className} sm:text-xl font-normal text-center mb-6 sm:mb-8 bg-[#0b335dd8] drop-shadow-2xl uppercase rounded-xl py-3 sm:py-5`}
@@ -67,7 +67,40 @@ export default function Home() {
           </div>
           {/* 17th October */}
         </div>
-      </main>
+      </div>
+      <div className="min-h-screen flex flex-col justify-start items-center gap-20 overflow-hidden">
+        <h1
+          className={`${unbounded.className} sm:text-5xl text-xl mt-24 drop-shadow-2xl w-max`}
+        >
+          Itinerary
+        </h1>
+        <ul className="flex flex-col items-start gap-3 w-max">
+          <li className={`${workSans.className} sm:text-xl`}>
+            <span className="font-semibold">Day - 1 &nbsp; |</span>
+            &nbsp; ---------------- TBD ----------------
+          </li>
+          <li className={`${workSans.className} sm:text-xl`}>
+            <span className="font-semibold">Day - 2 &nbsp; |</span>
+            &nbsp; ---------------- TBD ----------------
+          </li>
+          <li className={`${workSans.className} sm:text-xl`}>
+            <span className="font-semibold">Day - 3 &nbsp; |</span>
+            &nbsp; ---------------- TBD ----------------
+          </li>
+          <li className={`${workSans.className} sm:text-xl`}>
+            <span className="font-semibold">Day - 4 &nbsp; |</span>
+            &nbsp; ---------------- TBD ----------------
+          </li>
+          <li className={`${workSans.className} sm:text-xl`}>
+            <span className="font-semibold">Day - 5 &nbsp; |</span>
+            &nbsp; ---------------- TBD ----------------
+          </li>
+          <li className={`${workSans.className} sm:text-xl`}>
+            <span className="font-semibold">Day - 6 &nbsp; |</span>
+            &nbsp; ---------------- TBD ----------------
+          </li>
+        </ul>
+      </div>
     </>
   );
 }
