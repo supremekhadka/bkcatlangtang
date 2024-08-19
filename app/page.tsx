@@ -73,13 +73,13 @@ export default function Home() {
           {/* 17th October */}
         </div>
       </div>
-      <div className="min-h-screen flex justify-center items-center flex-wrap">
-        <div className="min-h-screen flex flex-col justify-start items-center gap-20 overflow-hidden">
-          <h1
-            className={`${unbounded.className} text-4xl sm:text-5xl mt-24 drop-shadow-2xl w-max`}
-          >
-            Itinerary
-          </h1>
+      <div className="min-h-screen flex flex-col justify-start items-center flex-wrap">
+        <h1
+          className={`${unbounded.className} text-4xl sm:text-5xl mt-24 drop-shadow-2xl w-max`}
+        >
+          Itinerary
+        </h1>
+        <div className=" flex flex-row justify-center items-center overflow-hidden my-auto">
           <ul className="flex flex-col items-start gap-3 w-full p-5 ">
             <li
               className={`${workSans.className} text-md sm:text-2xl text-wrap break-words `}
@@ -118,8 +118,8 @@ export default function Home() {
               &nbsp; | &nbsp;Drive back from Syabrubesi to Kathmandu
             </li>
           </ul>
+          <TrekMap />
         </div>
-        <TrekMap />
       </div>
     </>
   );

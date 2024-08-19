@@ -53,7 +53,7 @@ const TrekMap = () => {
         width: "25rem",
         borderRadius: "35px",
         zIndex: -0,
-        marginLeft: "50px",
+        marginLeft: "0px",
       }}
     >
       <TileLayer
