@@ -73,7 +73,7 @@ export default function Home() {
           {/* 17th October */}
         </div>
       </div>
-      <div className="min-h-screen flex flex-col justify-start items-center flex-wrap">
+      <div className="min-h-screen flex flex-col justify-start items-center flex-wrap bg-blend-overlay bg-gradient-to-b from-15% from-[#00000000] via-[#00000026] to-[#00000000]">
         <h1
           className={`${unbounded.className} text-4xl sm:text-5xl mt-24 drop-shadow-2xl w-max`}
         >
@@ -85,25 +85,28 @@ export default function Home() {
               className={`${workSans.className} text-md sm:text-2xl text-wrap break-words `}
             >
               <span className="font-semibold">Day 1 &nbsp;</span>
-              &nbsp; | &nbsp;Drive from Kathmandu to Syabrubesi (1,550m)
+              &nbsp; | &nbsp;Drive from Kathmandu to{" "}
+              <span className="font-medium">Syabrubesi (1,550m)</span>
             </li>
             <li className={`${workSans.className} sm:text-2xl`}>
               <span className="font-semibold">Day 2 &nbsp;</span>
-              &nbsp; | &nbsp;Trek from Syabrubesi to Lama Hotel (2,380m)
+              &nbsp; | &nbsp;Trek from Syabrubesi to{" "}
+              <span className="font-medium">Lama Hotel (2,380m)</span>
             </li>
             <li className={`${workSans.className} sm:text-2xl`}>
               <span className="font-semibold">Day 3 &nbsp;</span>
-              &nbsp; | &nbsp;Trek from Lama Hotel to Langtang Village (3,430m)
+              &nbsp; | &nbsp;Trek from Lama Hotel to{" "}
+              <span className="font-medium">Langtang Village (3,430m)</span>
             </li>
             <li className={`${workSans.className} sm:text-2xl`}>
               <span className="font-semibold">Day 4 &nbsp;</span>
-              &nbsp; | &nbsp;Trek from Langtang Village to Kyanjin Gompa
-              (3,870m)
+              &nbsp; | &nbsp;Trek from Langtang Village to{" "}
+              <span className="font-medium">Kyanjin Gompa (3,870m)</span>
             </li>
             <li className={`${workSans.className} sm:text-2xl`}>
               <span className="font-semibold">Day 5 &nbsp;</span>
-              &nbsp; | &nbsp;Explore Kyanjin Gompa and hike to Tserko Ri
-              (4,984m)
+              &nbsp; | &nbsp;Explore Kyanjin Gompa and hike to{" "}
+              <span className="font-medium">Tserko Ri (4,984m)</span>
             </li>
             <li className={`${workSans.className} sm:text-2xl`}>
               <span className="font-semibold">Day 6 &nbsp;</span>
