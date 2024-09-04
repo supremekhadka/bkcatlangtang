@@ -47,12 +47,12 @@ export default function Home() {
         <div className="bg-[#296eb1] z-20 brightness-75 w-screen h-screen fixed"></div>
       )}
       {!allImagesLoaded && <Loader />}
-      <div className="w-screen overflow-hidden h-screen flex-col justify-center items-center">
+      <div className="w-full overflow-hidden h-screen flex-col justify-center items-center">
         <Image
           src={backgroundImage}
           alt="Background Image Langtang"
           className="fixed -z-10 brightness-75 min-w-[1000px] sm:min-w-screen xl:min-h-none min-h-screen"
-          onLoadingComplete={handleLoadingComplete}
+          onLoad={handleLoadingComplete}
         />
         <div className="flex xl:flex-row flex-col w-full h-full justify-center items-center gap-10 sm:gap-20 2xl:gap-20">
           <h1
@@ -74,16 +74,12 @@ export default function Home() {
         </div>
       </div>
       <div className="min-h-screen flex flex-col justify-start items-center flex-wrap bg-blend-overlay bg-gradient-to-b from-15% from-[#00000000] via-[#00000026] to-[#00000000]">
-        <h1
-          className={`${unbounded.className} text-4xl sm:text-5xl mt-24 drop-shadow-2xl w-max`}
-        >
+        <h1 className={`${unbounded.className} text-4xl sm:text-5xl mt-24 drop-shadow-2xl w-max`}>
           Itinerary
         </h1>
         <div className=" flex flex-row justify-center items-center overflow-hidden my-auto">
           <ul className="flex flex-col items-start gap-3 w-full p-5 ">
-            <li
-              className={`${workSans.className} text-md sm:text-2xl text-wrap break-words `}
-            >
+            <li className={`${workSans.className} text-md sm:text-2xl text-wrap break-words `}>
               <span className="font-semibold">Day 1 &nbsp;</span>
               &nbsp; | &nbsp;Drive from Kathmandu to{" "}
               <span className="font-medium">Syabrubesi (1,550m)</span>
