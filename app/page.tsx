@@ -8,6 +8,7 @@ import { Unbounded, Work_Sans } from "next/font/google";
 import Timer from "./components/Timer";
 import Loader from "./components/Loader";
 import backgroundImage from "../public/assets/langtang2-blue.png";
+import saboteurSubham from "@/public/assets/saboteurSubham.png";
 import dynamic from "next/dynamic";
 
 const TrekMap = dynamic(() => import("./components/TrekMap"), { ssr: false });
@@ -122,6 +123,26 @@ export default function Home() {
             </li>
           </ul>
           <TrekMap />
+        </div>
+      </div>
+      <div className="min-h-screen flex flex-col justify-start items-center flex-wrap ">
+        <h1
+          className={`${unbounded.className} text-4xl sm:text-5xl mt-24 drop-shadow-2xl w-max`}
+        >
+          Saboteur 😡
+        </h1>
+        <div className="flex my-auto items-center justify-center gap-x-[2rem] gap-y-1 flex-wrap py-16">
+          <Image
+            width={400}
+            src={saboteurSubham}
+            alt="Saboteur Subham 😡"
+            className="my-auto rounded-2xl drop-shadow-2xl"
+          />
+          <h2
+            className={`${workSans.className} text-3xl font-semibold drop-shadow-lg`}
+          >
+            - Subham Sharma
+          </h2>
         </div>
       </div>
     </main>
