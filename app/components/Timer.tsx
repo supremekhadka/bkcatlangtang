@@ -14,7 +14,7 @@ const Timer = () => {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
-  const date = "October 17, 2024";
+  const date = "October 18, 2024";
 
   const getTime = () => {
     const time = (Date.parse(date) - Date.now()) / 1000;
@@ -39,7 +39,9 @@ const Timer = () => {
           className={`${workSans.className} border	 relative flex justify-center items-center 2xl:gap-10 xl:gap-8 lg:gap-6 sm:gap-4 gap-4 bg-[#0d1824c4] bg-opacity-100 z-10 rounded-3xl 2xl:px-16 2xl:py-10 xl:px-14 xl:py-8 sm:px-12 sm:py-6 px-8 py-6 drop-shadow-2xl`}
         >
           <div className="flex flex-col w-10 justify-center items-center gap-2">
-            <h1 className="2xl:text-5xl xl:text-3xl text-2xl">{days < 10 ? "0" + days : days}</h1>
+            <h1 className="2xl:text-5xl xl:text-3xl text-2xl">
+              {days < 10 ? "0" + days : days}
+            </h1>
             <span className="font-light text-sm sm:text-normal">Days</span>
           </div>
 
