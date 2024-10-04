@@ -125,7 +125,7 @@ export default function Home() {
           <TrekMap />
         </div>
       </div>
-      <div className="min-h-screen flex flex-col justify-start items-center flex-wrap ">
+      {/* <div className="min-h-screen flex flex-col justify-start items-center flex-wrap ">
         <h1
           className={`${unbounded.className} text-4xl sm:text-5xl mt-24 drop-shadow-2xl w-max`}
         >
@@ -144,7 +144,7 @@ export default function Home() {
             - Subham Sharma
           </h2>
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }
