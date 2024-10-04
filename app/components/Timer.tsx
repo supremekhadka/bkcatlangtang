@@ -14,7 +14,7 @@ const Timer = () => {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
-  const date = "October 18, 2024";
+  const date = "October 19, 2024";
 
   const getTime = () => {
     const time = (Date.parse(date) - Date.now()) / 1000;
